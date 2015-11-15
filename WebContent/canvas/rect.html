@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function draw() {
+		
+		//Canvas에 그림을 그리기 위해서 반드시 이 부분이 필요하다.
+		var myCanvas = document.getElementById('myCanvas');
+		var context = myCanvas.getContext('2d');
+		
+		context.fillRect(10,10,100,150);
+		context.strokeRect(150,150,50,50);
+		context.clearRect(180,180,25,50);		
+		
+	}
+
+</script>
+</head>
+<body onload="draw();">
+<canvas id="myCanvas" width="300px" height="300px" style="border: 1px solid">
+
+</canvas>
+</body>
+</html>
